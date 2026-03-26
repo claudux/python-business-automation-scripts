@@ -48,6 +48,9 @@ Script para leer un archivo Excel con datos bancarios, agrupar la información p
 ### 2. Gestión de personas
 Script para transformar un archivo Excel de marcaciones al formato solicitado por jefatura, estandarizando la salida y reduciendo trabajo manual.
 
+### 3. Rotador de fondos institucionales
+Script ejecutado en segundo plano para descargar imágenes desde un servidor y configurar automáticamente el fondo de pantalla de Windows en modo carrusel, permitiendo mantener fondos institucionales actualizados en los equipos.
+
 ## Documentación adicional
 - [Contexto de negocio](docs/business-context.md)
 - [Casos de uso](docs/use-cases.md)
