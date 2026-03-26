@@ -27,6 +27,7 @@ Se implementaron scripts orientados a:
 - Pandas
 - Excel
 - Windows
+- Automatización de archivos y sistema
 
 ## Flujo general
 
