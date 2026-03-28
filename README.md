@@ -1,92 +1,91 @@
-# Python Business Automation Scripts
+# 🐍 Python Business Automation Scripts
 
-Scripts en Python para automatizar tareas operativas, transformar datos de Excel y resolver necesidades prácticas en entornos TI.
+> Colección de scripts desarrollados en Python para automatizar tareas operativas, transformar datos estructurados (Excel) y resolver necesidades prácticas en entornos TI y administrativos.
 
-## Objetivo
-Desarrollar soluciones útiles y reutilizables para reducir trabajo manual, acelerar el procesamiento de información y automatizar tareas operativas en distintas áreas.
+## 📝 Objetivo
+Desarrollar soluciones informáticas útiles, modulares y reutilizables para reducir la carga de trabajo manual, acelerar el procesamiento de información crítica y automatizar tareas operativas repetitivas en distintas áreas de la institución.
 
-## Contexto
-Este repositorio reúne casos de automatización desarrollados en Python para resolver tareas repetitivas relacionadas con procesamiento de datos, transformación de archivos Excel y automatización de configuraciones en equipos Windows.
+## 📖 Contexto
+Este repositorio reúne casos prácticos de automatización desarrollados íntegramente en Python. Los scripts fueron diseñados para resolver ineficiencias y tareas repetitivas relacionadas con el procesamiento masivo de datos, la transformación de archivos Excel para cumplir con formatos específicos y la automatización de configuraciones corporativas en equipos Windows.
 
-## Casos incluidos
-- Procesamiento de datos bancarios para el área de finanzas
-- Transformación de marcaciones para gestión de personas
-- Rotador de fondos institucionales para equipos Windows
+## 💼 Casos Incluidos
+- **Finanzas:** Procesamiento de datos y conciliación bancaria.
+- **Gestión de Personas (RRHH):** Transformación de reportes de marcaciones biométricas.
+- **Soporte TI:** Rotador automático de fondos de pantalla institucionales para equipos Windows.
 
-## Solución desarrollada
+## 💡 Solución Desarrollada
 Se implementaron scripts orientados a:
-- lectura de archivos Excel
-- agrupación y consolidación de datos
-- suma de valores por criterios definidos
-- transformación de archivos a formatos requeridos por jefatura o áreas usuarias
-- automatización de configuraciones en equipos Windows
-- reducción de tareas manuales repetitivas
+- Lectura masiva y rápida de archivos Excel complejos.
+- Agrupación, limpieza y consolidación de datos (ETL).
+- Cálculo automático y suma de valores bajo criterios de negocio definidos.
+- Transformación estructural de archivos para cumplir con los formatos exigidos por las jefaturas o áreas usuarias.
+- Ejecución de comandos del sistema operativo para la automatización de configuraciones en equipos de la red Windows.
+- Reducción drástica de horas-hombre en tareas manuales propensas a errores.
 
-## Tecnologías utilizadas
-- Python
-- Pandas
-- Excel
-- Windows
-- Automatización de archivos y sistema
+## 🛠️ Tecnologías Utilizadas
+- **Lenguaje Base:** Python (Scripts `.py`).
+- **Manipulación de Datos:** Librería `pandas`, `openpyxl`.
+- **Interacción con Sistema:** Librería `os`, `ctypes`, `time`, automatización de archivos en red.
+- **Entorno de Ejecución:** Windows / Tareas Programadas (Task Scheduler).
 
-## Flujo general
-
-```mermaid
-flowchart LR
-    A[Archivo o recurso de entrada] --> B[Lectura y validacion]
-    B --> C[Procesamiento segun reglas de negocio]
-    C --> D[Transformacion o automatizacion]
-    D --> E[Resultado de salida]
-    E --> F[Uso por area o equipo solicitante]
-```
-
-## Casos de automatización
-
-### 1. Finanzas
-Script para leer un archivo Excel con datos bancarios, agrupar la información por columnas específicas y calcular sumas de valores para facilitar el análisis y procesamiento del área.
+## 🔄 Flujo General de los Scripts
 
 ```mermaid
 flowchart LR
-    A[Excel con datos bancarios] --> B[Lectura del archivo]
-    B --> C[Agrupacion por columnas especificas]
-    C --> D[Suma de valores]
-    D --> E[Archivo o resultado consolidado]
-    E --> F[Uso por area de Finanzas]
+    A["Archivo / Recurso de Entrada"] --> B["Lectura y Validación"]
+    B --> C["Procesamiento (Reglas de Negocio)"]
+    C --> D["Transformación / Automatización"]
+    D --> E["Resultado (Salida)"]
+    E --> F["Uso por Área Solicitante"]
 ```
 
-### 2. Gestión de personas
-Script para transformar un archivo Excel de marcaciones al formato solicitado por jefatura, estandarizando la salida y reduciendo trabajo manual.
+## 🚀 Casos de Automatización Detallados
+
+### 💰 1. Área de Finanzas (Procesamiento Bancario)
+Script diseñado para leer archivos Excel pesados con datos bancarios crudos, agrupar la información según columnas clave y calcular las sumas de valores correspondientes. Facilita el análisis financiero y reduce los tiempos de cierre del área.
 
 ```mermaid
 flowchart LR
-    A[Excel de marcaciones] --> B[Lectura del archivo]
-    B --> C[Transformacion de estructura]
-    C --> D[Adaptacion al formato solicitado]
-    D --> E[Archivo de salida estandarizado]
-    E --> F[Uso por jefatura]
+    A["Excel con Datos Bancarios"] --> B["Lectura del Archivo (Pandas)"]
+    B --> C["Agrupación por Columnas Clave"]
+    C --> D["Suma y Consolidación"]
+    D --> E["Archivo de Salida Procesado"]
+    E --> F["Análisis en Finanzas"]
 ```
 
-### 3. Rotador de fondos institucionales
-Script ejecutado en segundo plano para descargar imágenes desde un servidor y configurar automáticamente el fondo de pantalla de Windows en modo carrusel, permitiendo mantener fondos institucionales actualizados en los equipos.
+### 👥 2. Gestión de Personas (Control de Asistencia)
+Script encargado de transformar la salida (export) en crudo de los sistemas de marcación biométrica a un formato estandarizado y legible, estructurando los datos exactamente como la jefatura los solicita.
 
 ```mermaid
 flowchart LR
-    A[Script en segundo plano] --> B[Consulta imagenes en servidor]
-    B --> C[Descarga archivos]
-    C --> D[Actualiza fondo de pantalla en Windows]
-    D --> E[Rotacion tipo carrusel]
-    E --> F[Equipo mantiene fondos institucionales actualizados]
+    A["Export Crudo de Marcaciones"] --> B["Lectura del Archivo"]
+    B --> C["Transformación de Estructura"]
+    C --> D["Adaptación al Formato Requerido"]
+    D --> E["Excel Estandarizado (Output)"]
+    E --> F["Revisión por Jefatura"]
 ```
 
-## Documentación adicional
-- [Contexto de negocio](docs/business-context.md)
-- [Casos de uso](docs/use-cases.md)
-- [Impacto y resultados](docs/impact-and-results.md)
+### 🖥️ 3. Soporte TI (Rotador de Fondos Institucionales)
+Script que se ejecuta de forma silenciosa (en segundo plano). Se conecta a un servidor local o repositorio en red, descarga las imágenes corporativas más recientes y modifica el fondo de pantalla de Windows (`Desktop Wallpaper`) en modo carrusel.
 
+```mermaid
+flowchart LR
+    A["Script en Segundo Plano"] --> B["Consulta Imágenes en Servidor"]
+    B --> C["Descarga de Archivos (.jpg/.png)"]
+    C --> D["Actualización del Registro (Windows)"]
+    D --> E["Rotación Tipo Carrusel"]
+    E --> F["Equipos Corporativos Actualizados"]
+```
 
-## Consideraciones
-Este repositorio presenta versiones adaptadas de casos reales, sin exponer datos sensibles ni información interna.
+## 📚 Documentación Adicional
+- 🏢 [Contexto de negocio](docs/business-context.md)
+- ⚙️ [Casos de uso y guías de ejecución](docs/use-cases.md)
+- 📈 [Impacto en horas-hombre y resultados](docs/impact-and-results.md)
 
-## Contacto
-Si quieres conocer más sobre este proyecto o mi trabajo en automatización y análisis de datos, puedes escribirme a:  
-[claudio.duran.m@gmail.com](mailto:claudio.duran.m@gmail.com)
+## ⚠️ Consideraciones
+Este repositorio presenta **versiones adaptadas de los scripts reales**. Los datos de prueba incluidos son ficticios y las rutas de red a servidores o carpetas compartidas institucionales han sido modificadas para no exponer información sensible ni la topología de la red interna.
+
+## 📫 Contacto
+Si quieres conocer más sobre mis scripts de automatización con Python o conversar sobre cómo digitalizar procesos, contáctame:
+- 📧 **Email:** [claudio.duran.m@gmail.com](mailto:claudio.duran.m@gmail.com)
+- 💼 **LinkedIn:** [Claudio Durán Molina](https://www.linkedin.com/in/claudio-duran-molina-41580677)
